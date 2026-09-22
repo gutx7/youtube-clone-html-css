@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>Youtube</title>
+        <title>YouTube</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="styles/general.css">
         <link rel="stylesheet" href="styles/video.css">
         <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/sidebar.css">
 
     </head>
     <body>
@@ -22,22 +23,61 @@
                 <input class="search-box" type="text" placeholder="Search" >
                 <button class="search-button">
                     <img class="search-icon" src="icons/search.svg">
+                    <div>Search</div>
                 </button>
                 <button class="voice-search-button">
                     <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+                    <div>Search with your voice</div>
                 </button>
             </div>
             <div class="right-section-header">
-                <img class="upload-icon" src="icons/upload.svg">
-                <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
-                <img class="notifications-icon" src="icons/notifications.svg">
+                <div class="upload-icon-div">
+                    <img class="upload-icon" src="icons/upload.svg">
+                    <div>Create</div>
+                </div>
+                <div class="youtube-apps-div">
+                    <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+                    <div>YouTube apps</div>
+                </div>
+                <div class="notifications-icon-container">
+                    <img class="notifications-icon" src="icons/notifications.svg">
+                    <div class="notifications-icon-count">3</div>
+                    <div class="hov">Notifications</div>
+                </div>
                 <img class="user-pfp-icon" src="channel-pfps/my-channel.jpeg">
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar-link">
+                <img class="sidebar-icons" src="icons/home.svg">
+                <div>Home</div>
+            </div>
+            <div class="sidebar-link">
+                <img class="sidebar-icons" src="icons/explore.svg">
+                <div>Explore</div>
+            </div>
+            <div class="sidebar-link">
+                <img class="sidebar-icons" src="icons/subscriptions.svg">
+                <div>Subscriptions</div>
+            </div>
+            <div class="sidebar-link">
+                <img class="sidebar-icons" src="icons/originals.svg">
+                <div>Originals</div>
+            </div>
+            <div class="sidebar-link">
+                <img class="sidebar-icons" src="icons/youtube-music.svg">
+                <div>YouTube Music</div>
+            </div>
+            <div class="sidebar-link">
+                <img class="sidebar-icons" src="icons/library.svg">
+                <div>Library</div>
             </div>
         </div>
         <div class="video-grid">
             <div class="video-preview">
-                <div>
+                <div class="thumbnail-div">
                     <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+                    <div class="timestamp">14:20</div>
                 </div>
                 <div class="vid-compts">
                     <div class="channel-picture">
@@ -59,14 +99,14 @@
             </div>
 
             <div class="video-preview">
-                <div>
+                <div class="thumbnail-div">
                     <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+                    <div class="timestamp">8:22</div>
                 </div>
                 <div class="vid-compts">
                     <div class="channel-picture">
                         <img class="pfp" src="channel-pfps/channel-2.jpeg">
                     </div>
-
                     <div class="video-info">
                         <p class="video-title">
                         Try Not To Laugh Challenge #9
@@ -82,8 +122,9 @@
             </div>
 
             <div class="video-preview">
-                <div>
+                <div class="thumbnail-div">
                     <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+                    <div class="timestamp">9:13</div>
                 </div>
                 <div class="vid-compts">
                     <div class="channel-picture">
@@ -105,8 +146,9 @@
             </div>
 
             <div class="video-preview">
-                <div>
+                <div class="thumbnail-div">
                     <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+                    <div class="timestamp">22:09</div>
                 </div>
                 <div class="vid-compts">
                     <div class="channel-picture">
@@ -128,8 +170,9 @@
             </div>
 
             <div class="video-preview">
-                <div>
+                <div class="thumbnail-div">
                     <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+                    <div class="timestamp">11:17</div>
                 </div>
                 <div class="vid-compts">
                     <div class="channel-picture">
@@ -151,8 +194,9 @@
             </div>
 
             <div class="video-preview">
-                <div>
+                <div class="thumbnail-div">
                     <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+                    <div class="timestamp">19:59</div>
                 </div>
                 <div class="vid-compts">
                     <div class="channel-picture">
@@ -174,8 +218,9 @@
             </div>
 
             <div class="video-preview">
-                <div>
+                <div class="thumbnail-div">
                     <img class="thumbnail" src="thumbnails/thumbnail-7.webp">
+                    <div class="timestamp">10:13</div>
                 </div>
                 <div class="vid-compts">
                     <div class="channel-picture">
@@ -197,8 +242,9 @@
             </div>
 
             <div class="video-preview">
-                <div>
+                <div class="thumbnail-div">
                     <img class="thumbnail" src="thumbnails/thumbnail-8.webp">
+                    <div class="timestamp">10:13</div>
                 </div>
                 <div class="vid-compts">
                     <div class="channel-picture">
@@ -220,8 +266,9 @@
             </div>
 
             <div class="video-preview">
-                <div>
+                <div class="thumbnail-div">
                     <img class="thumbnail" src="thumbnails/thumbnail-9.webp">
+                    <div class="timestamp">13:17</div>
                 </div>
                 <div class="vid-compts">
                     <div class="channel-picture">
@@ -243,8 +290,9 @@
             </div>
 
             <div class="video-preview">
-                <div>
+                <div class="thumbnail-div">
                     <img class="thumbnail" src="thumbnails/thumbnail-10.webp">
+                    <div class="timestamp">7:53</div>
                 </div>
                 <div class="vid-compts">
                     <div class="channel-picture">
@@ -266,8 +314,9 @@
             </div>
 
             <div class="video-preview">
-                <div>
+                <div class="thumbnail-div">
                     <img class="thumbnail" src="thumbnails/thumbnail-11.webp">
+                    <div class="timestamp">4:10</div>
                 </div>
                 <div class="vid-compts">
                     <div class="channel-picture">
@@ -289,8 +338,9 @@
             </div>
 
             <div class="video-preview">
-                <div>
+                <div class="thumbnail-div">
                     <img class="thumbnail" src="thumbnails/thumbnail-12.webp">
+                    <div class="timestamp">4:51</div>
                 </div>
                 <div class="vid-compts">
                     <div class="channel-picture">

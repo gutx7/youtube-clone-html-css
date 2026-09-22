@@ -5,4 +5,9 @@ p{
 
 body{
     margin: 0;
+    padding-top:80px ;
+    padding-left: 95px;
+    padding-right: 26px;
+    padding-bottom: 40px;
+    background-color: rgba(247, 244, 244, 0.73);
 }

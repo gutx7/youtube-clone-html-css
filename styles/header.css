@@ -3,6 +3,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: white;
+    border-bottom-width:1px ;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(216, 216, 216);
+    z-index: 1;
 }
 
 .left-section-header{
@@ -15,9 +24,17 @@
     height: 24px;
 }
 
+.hamburger-menu:hover{
+    cursor: pointer;
+}
+
 .youtube-logo{
     margin-left: 20px;
     height: 20px;
+}
+
+.youtube-logo:hover{
+    cursor: pointer;
 }
 
 .middle-section-header{
@@ -57,6 +74,11 @@
     border-color: rgba(128, 128, 128, 0.41);
     margin-left: -1px;
     margin-right: 10px;
+    position: relative;
+}
+
+.search-button:hover{
+    cursor: pointer;
 }
 
 .search-icon{
@@ -72,14 +94,14 @@
     background-color: rgba(245, 245, 245);
 }
 
+.voice-search-button:hover{
+    cursor: pointer;
+}
+
 .voice-search-icon{
     height: 25px;
     margin-top: 4px;
     margin-top: 4px;
-}
-
-.voice-search-icon{
-    height: 24px;
 }
 
 .right-section-header{
@@ -94,15 +116,140 @@
     height: 24px;
 }
 
+.upload-icon:hover{
+    cursor: pointer;
+}
+
 .youtube-apps-icon{
     height: 24px;
+}
 
+.youtube-apps-icon:hover{
+    cursor: pointer;
 }
 
 .notifications-icon{
     height: 24px;
 }
 
+.notifications-icon-container:hover{
+    cursor: pointer;
+}
+
+.notifications-icon-container{
+    position: relative;
+}
+
+.notifications-icon-count{
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius:50% ;
+    background-color: rgb(207, 3, 3);
+    color: white;
+    font-family: Roboto , Arial;
+    font-size: 10px;
+    border-width: 2px;
+    border-color:white;
+    border-style: solid;
+}
+
 .user-pfp-icon{
     height: 32px;
+}
+
+.user-pfp-icon:hover{
+    cursor: pointer;
+}
+
+.search-button div{
+    background-color: rgba(107, 107, 107, 0.885);
+    color: white;
+    position: absolute;
+    top: 60px;
+    padding: 8px;
+    border-radius: 10%;
+    opacity: 0;
+    font-family:arial ;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+
+.search-button:hover div{
+    opacity: 1;
+}
+
+.voice-search-button div{
+    background-color: rgba(107, 107, 107, 0.91);
+    color: white;
+    position: absolute;
+    top: 70px;
+    padding: 8px;
+    border-radius: 10%;
+    opacity: 0;
+    font-family:arial;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+
+.voice-search-button:hover div{
+    opacity: 1;
+}
+
+.upload-icon-div div{
+    background-color: rgba(107, 107, 107, 0.868);
+    color: white;
+    position: absolute;
+    top: 65px;
+    padding: 8px;
+    border-radius: 10%;
+    opacity: 0;
+    font-size: small;
+    font-family:arial ;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+
+.upload-icon-div:hover div{
+    opacity: 1;
+}
+
+.youtube-apps-div div{
+    background-color: rgba(107, 107, 107, 0.868);
+    color: white;
+    position: absolute;
+    top: 68px;
+    padding: 7px;
+    border-radius: 10%;
+    opacity: 0;
+    font-size: small;
+    font-family:arial;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+
+.youtube-apps-div:hover div{
+    opacity: 1;
+}
+
+.notifications-icon-container .hov{
+    background-color: rgba(107, 107, 107, 0.868);
+    color: white;
+    position: absolute;
+    top: 55px;
+    padding: 8px;
+    border-radius: 10%;
+    opacity: 0;
+    font-size: small;
+    font-family:arial;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+
+.notifications-icon-container:hover .hov{
+    opacity: 1;
 }
